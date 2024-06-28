@@ -20,7 +20,7 @@ export class UserService {
     }
 
     async getAllUsers(){
-        const allUsers = this.userRepository.find()
+        const allUsers = await this.userRepository.find()
         return allUsers;
     }
 }
